@@ -37,7 +37,7 @@
   "script-fu-concat-layers"
   "Concatenate Layers Vertically"
   "Concatenates Layers Vertically. For example if each layer is one page of a PDF."
-  "Praashant Karmakar"
+  "Prashant Karmakar"
   "Copyright 2019, Prashant Karmakar"
   "Saturday 15 June 2019 12:28:55 PM IST"
   "*"
