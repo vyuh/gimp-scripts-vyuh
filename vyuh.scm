@@ -6,6 +6,7 @@
       (* (car (gimp-image-get-layers img)) (car (gimp-image-height img)))
       0
       0))
+(define (layers img) (vector->list (cadr (gimp-image-get-layers img))))
 (define (process img) 
   (let*
     (
@@ -18,8 +19,8 @@
   (list
     img
     (car (gimp-image-width img))
-    ( car (gimp-image-height img))
-    (vector->list (cadr (gimp-image-get-layers img)))))
+    (car (gimp-image-height img))
+    (layers img)
 (define (shift-layers layers height)
   (if (> (length layers) 1)
     (begin
